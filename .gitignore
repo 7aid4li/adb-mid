@@ -1,8 +1,8 @@
 postcrossing-api/node_modules/
 
-# Ignore environment variables file (contains secrets!)
+
 postcrossing-api/.env
 
-# Ignore system files
+
 .DS_Store
 ```
