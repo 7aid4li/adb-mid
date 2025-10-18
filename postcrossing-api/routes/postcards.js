@@ -31,7 +31,6 @@ router.post('/request', auth, async (req, res) => {
 
 
         // Generate a new Postcard ID
-        // (This is a simplified example. A real system would be more robust.)
         const country = await Country.findOne({ countryCode: sender.countryCode });
         const newPostcardID = `${sender.countryCode}-${country.totalSent + 1}`;
 
@@ -56,7 +55,6 @@ router.post('/request', auth, async (req, res) => {
 
         res.json({
             receiverName: recipient.fullName,
-            // In a real app, you'd have an address field. We'll mock it.
             address: `${recipient.fullName}, 123 Main St, Anytown, ${recipient.countryCode}`,
             postcardID: newPostcardID
         });
