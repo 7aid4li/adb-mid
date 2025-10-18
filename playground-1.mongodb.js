@@ -1,6 +1,5 @@
 // seed.js
-// MongoDB shell / mongosh compatible.
-// Creates sample DB `postcrossing_db` with users, countries, postcards, matches.
+// Create DB `postcrossing_db` with users, countries, postcards, matches.
 
 // Use database
 use('postcrossing_db')
@@ -187,7 +186,6 @@ const postcards = [
     _id: ObjectId("64f2000000000000000000c7"),
     postcardID: "DE-55001",
     senderId: ObjectId("64f1000000000000000000b5"),
-    // --- FIX #1 HERE: Removed extra '0' from this 25-char string ---
     receiverId: ObjectId("64f1000000000000000000b3".replace('0000','0000')),
     countryFrom: "DE",
     countryTo: "CN",
@@ -200,7 +198,6 @@ const postcards = [
 ];
 
 // NOTE: ensure receiverId ObjectIds reference actual inserted user IDs
-// Fix incorrect replaces in c4 and c7 above by direct correct ids:
 postcards[3].receiverId = ObjectId("64f1000000000000000000b4"); // US-11797804 -> receiver Marco
 postcards[6].receiverId = ObjectId("64f1000000000000000000b3"); // DE-55001 -> receiver Li
 
@@ -236,11 +233,8 @@ const matches = [
     createdAt: new Date()
   },
   {
-    // --- FIX #2 HERE: Removed extra '0' from this 25-char string ---
     _id: ObjectId("64f3000000000000000000d2"),
-    // --- FIX #3 HERE: Removed extra '0' from this 25-char string ---
     initiatorPostcardId: ObjectId("64f2000000000000000000c3"),
-    // --- FIX #4 HERE: Removed extra '0' from this 25-char string ---
     reciprocalPostcardId: ObjectId("64f2000000000000000000c4"),
     createdAt: new Date()
   }
