@@ -27,7 +27,6 @@ connection.once('open', () => {
 
 // --- API Routes ---
 // Use the imported route files.
-// For example, any URL starting with /api/auth will be handled by authRoutes.
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/postcards', postcardRoutes);
