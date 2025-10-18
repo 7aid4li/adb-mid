@@ -1,10 +1,8 @@
-# **Section 	: 	C**
+**Section 	: 	C**
 
-# **Reg\#		: 	FA23-BCS-170**
+**Reg\#		: 	FA23-BCS-170**
 
 # **Name		: 	Zaid Ali**
-
-# 
 
 # **Advanced Database**
 
@@ -12,7 +10,7 @@
 
 # **Postcrossing Project**
 
-This project is a full-stack implementation of a Postcrossing-like service, designed to fulfill the requirements of "Sample Paper D". It consists of two main components: a backend REST API built with Node.js and Express, and a Firefox browser extension for sorting tabs.
+This project is an implementation of a Postcrossing-like service, designed to fulfill the requirements of "Sample Paper D". It consists of three main components: the mongoDB schema/seed file, a backend REST API built with Node.js and Express, and a Firefox browser extension for sorting tabs.
 
 ## **Features**
 
