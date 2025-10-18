@@ -2,7 +2,7 @@
 
 **Reg\#		: 	FA23-BCS-170**
 
-# **Name		: 	Zaid Ali**
+**Name		: 	Zaid Ali**
 
 # **Advanced Database**
 
